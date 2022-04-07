@@ -1,0 +1,16 @@
+"Variables: es un espacio que guardamos para utilizar mas tarde en nuestro codigo a ellas se les puede asignar un or        cualquier tipo, lo bueno de java es que no tenemos que  definirlas al iniciarlas ya que en java podemos            configurarlas en cualquiermomento, otra cosa importante es que para identificaarlas y nombrarlas vamos a            escribir la palabra Var esta es una palabra clave y no podra ser utilizada para identificar una variable.
+vamos a tener encuenta otro dato muy importante en java ES6 hay dos formas de utilizar las variables aparte de            la palabra VAR una de ellas es LET que es lo mas parecido a VAR pero se comporta diferente en el codigoy CONST            que es la forma avreviada de decir constante que es cuando una variable va tener el mismo valor siempre que la            escribamos ella nos mostraria el mismo valor que le hemos asignado desde un principio.
+
+Strings:  esto es ya sea una palabra o una cadena de palabras las podemos identidicar por medio de el uso de las dos       comillas o/u una comilla nada mas.
+
+Funciones(argumentos): los argumentos en una funcion son aquellos que agregamos dentro de los parentesis al declarar la   funcion podemos agregar varios separandolos mediantes comas.
+
+Funciones (Returns):  esta declaracion se utiliza cuando queremos que nuestra funcion nos devuelva algun dato u valor      que si no la ponemos en la funcion esta se ejecutara pero sin devolver nada pero al momento de que la funcion se encuentra con esta declaracion se frena y nos muestra el valor o dato que se haya obtenido.
+
+Declaraciones if: estas se podrian decir que son las mas utilizadas he importantes ya que estas declaraciones no son mas   que una condicion de si es verdad, entonces haga esto; si no es verdad, haga esto mas que todo son condiciones de falso y verdedaro por lo cual las vamos a utilizar muchisimo al momento de escribir codigo, antes de cualquier cosa tenemos que definir la condicion de lo que necesitamos en el if por ej:
+                  
+if(condicion){
+// codigo se ejecuta si es verdadero
+} else { // codigo ejecutado si es falso }
+
+Valores Booleanos (true,false): estos son valores de 1 o 0 lo cual significa en el lenguaje de java true o false y se   utlizan de la misma manera que en en la logica booleana como solo dos opciones ya sea que 1 para verdadero y 0 para falso solo estan esos dos caminos y al momento de generar codigo lo irias entendiento.
