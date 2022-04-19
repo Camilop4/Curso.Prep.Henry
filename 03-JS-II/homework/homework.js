@@ -54,7 +54,7 @@ function saludo(idioma) {
   if (false) {
     return false;
   } else if (idioma === 'aleman') {
-    return 'Guten tag!';
+    return 'Guten Tag!';
   } else if (idioma === 'mandarin') {
     return 'Ni Hao!';
   } else if (idioma === 'ingles') {
@@ -134,14 +134,14 @@ function fizzBuzz(numero) {
   // De lo contrario, devuelve el numero
   if (false) {
     return false;
-  } else if (numero % 3 == 0) {
-    return 'fizz';
-  }else if (numero % 5 == 0) {
-    return 'buzz';
   } else if (numero % 3 == 0 && numero % 5 == 0) {
     return 'fizzbuzz';
+  }else if (numero % 3 == 0) {
+    return 'fizz';
+  } else if (numero % 5 == 0) {
+    return 'buzz';
   } else {
-    return 'numero';
+    return numero;
   }
 }
 
@@ -154,15 +154,15 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
  if (false) {
        return false;
-       } else if (num1 > num2 && num1 > num3 && num1 > 0) {
-       return 'Numero 1 es mayor y positivo';
        } else if (num1 < 0 || num2 < 0 || num3 < 0) {
        return 'Hay negativos';
+       } else if (num1 === 0 || num2 === 0 || num3 === 0) {
+       return 'Error';
        } else if (num3 > num1 && num3 > num2) {
        num3++;
        return num3; 
-      } else if (num1 == 0 || num2 == 0 || num3 == 0) {
-       return 'Error';
+      } else if (num1 > num2 && num1 > num3 && num1 > 0) {
+       return 'Número 1 es mayor y positivo';
       } else {
   return false;
   }  
@@ -174,28 +174,22 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if ( numero == 0 || numero == 1 || numero == 4) {
-    return false;
-    var p = numero;
-    for (let p = 2; p < numero/2; p++) {
-      return false;
-    } else {
-      return true;
-    }
+  if (numero == 0 || numero == 1 || numero == 4) return false;
+  for (let x = 2; x < numero / 2; x++) {
+    if (numero % x == 0) return false;
   }
-  
-}
+  return true;
+  }
 
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if (valor === 'true') {
+  if (valor === true) {
     return 'Soy verdadero';
   } else {
     return 'Soy falso';
   }
-
 }
 
 function tablaDelSeis(){
@@ -203,21 +197,20 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
   var t = 6;
-  var c = 10;
-  for (i = 0; i <= c; i++) {
-    console.log (t + 'x' + i + '=' + (t * i));
-  }   
+  var c = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    for (i = 0; i <= c.length; i++) {
+     console.log (c[i] * t);
+     }   
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero >= 100) {
+  if (numero >= 100 && numero <= 999) {
     return true;
   } else {
     return false;
   }
-  
 }
 
 function doWhile(numero) {
@@ -225,11 +218,13 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
   let x = '';
-  let i = numero;
+  let y = numero;
   do {
-    i = i + 5;
-    x = i;
-  } while (i < j);
+    for (i = 0; i <= 7; i++) {
+      y = y + 5;
+      x = y;
+    }
+  } while (x <= i);
   return x;  
 }
 
