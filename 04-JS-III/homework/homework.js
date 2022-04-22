@@ -1,12 +1,12 @@
 // No cambies los nombres de las funciones.
 
-function devolverPrimerElemento(array) {
+function devolverPrimerElemento(z,x,c,v,b,n) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  array.push;
-  console.log (array);
+  array = [];
+  array.push (z,x,c,v,b,n)
+  console.log (array [0]);
 }
-
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
