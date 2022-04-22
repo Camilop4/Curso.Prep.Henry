@@ -8,9 +8,12 @@ function devolverPrimerElemento(z,x,c,v,b,n) {
   console.log (array [0]);
 }
 
-function devolverUltimoElemento(array) {
+function devolverUltimoElemento(z,x,c,v,b,n) {
   // Devuelve el último elemento de un array
   // Tu código:
+  array = [];
+  array.push (z,x,c,v,b,n)
+  console.log (array [0]); 
 }
 
 
