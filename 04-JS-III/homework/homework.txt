@@ -1,0 +1,3 @@
+Arrays: 
+
+los array o arreglos en español son las que nos permiten guardar mas de un dato en la misma variable la ventannja de los arreglos es que no importa el tipo de dato que guardemos ya que no tiene restricciones para crear estos arreglos basta no mas con nombrar la variable y establecerla en [] ya con esto podemos guardar cual quier dato incluso hasta funciones, los arragoos son bastante utilizados en la programacionya que nos permite estar mas enfocados a la programacion de obejetos. 
