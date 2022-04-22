@@ -3,6 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return array [0];
 }
 
 function devolverUltimoElemento(array) {
@@ -117,7 +118,7 @@ function multiplicarArgumentos() {
   }
   var t = 1;
   for (i = 0; i < arguments.length; i++) {
-    total = total * arguments [i];
+    t = t * arguments [i];
   }
   return t;
 }
@@ -168,10 +169,10 @@ function todosIguales(arreglo) {
   //Escribe tu código aquí
   for (i = 0; i < arreglo.length -1; i++) {
     if (arreglo [i] !== arreglo[i+1]) {
-      return true;
+      return false;
     }
   }  
-  return false;
+  return true;
 } 
 
 
@@ -181,7 +182,7 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   nuevoArray = [];
-  for (i = 0; i array.length; i++) {
+  for (i = 0; i < array.length; i++) {
     if (array[i] === 'Enero'|| array [i] === 'Marzo' || array [i] === 'Noviembre') {
       nuevoArray.push (array[i]);
     }
@@ -199,12 +200,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  nuevoArray = [];
-  for (let i = 0; i < array.length; i++) {
+  var nuevoArray = [];
+  for ( i = 0; i < array.length; i++) {
     if (array[i] > 100) {
       nuevoArray.push (array[i]);
     }
   }
+  return nuevoArray;
 }
 
 
