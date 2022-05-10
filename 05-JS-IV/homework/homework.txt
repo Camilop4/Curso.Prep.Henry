@@ -1,0 +1,25 @@
+Obejetos:
+los objetos al igual que los arreglos son contenedores de datos, claro que en los arreglos podemos dejar multiples elementos relacionados unos con otros en los objetos hay mucha informacion sobre una sola cosa.
+
+Propiedades:
+Estan son las que estan dentro de los objetos y las que definen el contenido del mismo, estas se pueden diferenciar por medio de mayusculas, pueden haber varias con el mismo valor mas no con el mismo nombre dejo un ejemplo de lo que son las propiedades;
+
+var prueba = {
+	propiedad1: valor,
+	propiedad2: valor,
+}
+
+Metodos:
+esto es lo mismo que decir function dentro de un objeto, las funciones que se encuentren dentro del objeto se le llama como metodo (Nota: podemos llamar a un metodo con argumentos como lo hariamos con una funcion normal)
+
+Bucle for..in:
+este es un bucle especial ya que en los objetos no hay indices numericos por lo cual si queremos recorrer el objeto necesitariamos un bucle for integrado llamado "for...in loop" comienza igual pero entre parentesis declararemos una variable, escribimos la palabra clave in y el nombre del objeto, con esto se podra recorrer cada propiedad del objeto y finalizara cuando se haya recorrido todas las propiedades, podemos usar esta pclave y la notacion de corchetes en nuestro bucle for para acceder al valor asociado.
+
+Notacion de puntos vs Notacion de corchetes:
+con la notacion de puntos podemos llamar al ombre del objeto un punto y el nombre de la propiedad por ej:
+
+prueba.propiedad1;
+
+La notacion de corchetes es como llamar a un elelemento en una matriz, aunque con corchetes debemos usar una cadena o numero o una variable que apunte a una cadena o numero, se puede llamar a cada clave envolviendola con comillas ej:
+
+prueba ['propiedad1'];
